@@ -1,10 +1,8 @@
-import { BrowserRouter } from 'react-router-dom';
-import Routes from '@/routes';
-
-import { Provider as ReduxProvider } from 'react-redux';
-import store from './store';
-
-import AntdProvider from './AntdProvider';
+import { Provider as ReduxProvider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
+import Routes from '@/routes'
+import AntdProvider from './AntdProvider'
+import store from './store'
 
 const App = () => {
   return (
@@ -15,7 +13,7 @@ const App = () => {
         </BrowserRouter>
       </ReduxProvider>
     </AntdProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App

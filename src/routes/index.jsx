@@ -1,7 +1,6 @@
-import { useRoutes } from 'react-router-dom';
-
-import HomePage from '@/views/Home';
-import Index from '@/views/Index';
+import { useRoutes } from 'react-router-dom'
+import HomePage from '@/views/Home'
+import Index from '@/views/Index'
 
 const router = [
   {
@@ -14,10 +13,10 @@ const router = [
       }
     ]
   }
-];
+]
 
 const Routes = () => {
-  return useRoutes(router);
-};
+  return useRoutes(router)
+}
 
-export default Routes;
+export default Routes

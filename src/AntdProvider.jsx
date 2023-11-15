@@ -1,5 +1,5 @@
-import { ConfigProvider, App, theme } from 'antd';
-import zhCN from 'antd/locale/zh_CN';
+import { App, ConfigProvider, theme } from 'antd'
+import zhCN from 'antd/locale/zh_CN'
 
 // import dayjs from 'dayjs'
 // import 'dayjs/locale/zh-cn';
@@ -18,17 +18,13 @@ const AntdProvider = ({ children }) => {
       // // 派生变量，影响范围小
       // colorBgContainer: '#f6ffed'
     }
-  };
+  }
 
   return (
-    <ConfigProvider
-      locale={zhCN}
-      componentSize={'default'}
-      theme={config}
-    >
+    <ConfigProvider locale={zhCN} componentSize={'default'} theme={config}>
       <App>{children}</App>
     </ConfigProvider>
-  );
-};
+  )
+}
 
-export default AntdProvider;
+export default AntdProvider
